@@ -35,7 +35,7 @@ To run this project. Run this command
 $ nodemon 
 ```
 
-Now head to http://localhost:4004 and see your running app!
+Now head to http://localhost:4004/api/v1/ and see your running app!
 
 #
 ## License
