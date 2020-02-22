@@ -35,6 +35,12 @@ To run this project. Run this command
 $ nodemon 
 ```
 
+Or
+
+ ```sh
+$ node server.js 
+```
+
 Now head to http://localhost:4004/api/v1/ and see your running app!
 
 #
