@@ -1,7 +1,7 @@
 
 ## Softcom Stackoverflow Restful API
 
-> This simple Restful API app docmentation is an implementation of a simple clone of Stackoverflow, It's intended to accompany the walkthroughs of user, but it can also be run locally on its own.
+> This simple Restful API app docmentation is an implementation of a simple clone of Stackoverflow, It's intended to help users solve critical problems amongs developers and also provide possibe solution to a problem, this project can be run locally on its own.
 
 ## Prerequisites
 
