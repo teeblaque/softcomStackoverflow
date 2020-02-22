@@ -1,17 +1,30 @@
-##Introduction
 
-> Implementation of a simple clone of Stackoverflow.
+## Softcom Stackoverflow Restful API
+
+> This simple Restful API app docmentation is an implementation of a simple clone of Stackoverflow Restful API, It's intended to accompany the walkthroughs of user, but it can also be run locally on its own.
+
+## Prerequisites
+
+To package and run this application with node, you'll need to:
+
+1. Install Mongodb on your machine
+
+2. Clone this repository:
+
+> $ git clone https://github.com/teeblaque/softcomStackoverflow.git
+> $ cd softcomStackoverflow
 
 ## Installation
 
+Before you can run the app, you will need to install dependencies. The quickest way to do this is by running npm install and following the prompts:
+
 ```sh
-clone the project
-
-To install all the packages used, run 
-
 $ npm install 
-
 ```
+## Running the project with nodemon
+
+To run this project. Run this command
+ > nodemon
 
 #
 ## License
