@@ -11,8 +11,10 @@ To package and run this application with node, you'll need to:
 
 2. Clone this repository:
 
-> $ git clone https://github.com/teeblaque/softcomStackoverflow.git
-> $ cd softcomStackoverflow
+```sh
+ $ git clone https://github.com/teeblaque/softcomStackoverflow.git
+ $ cd softcomStackoverflow
+```
 
 ## Installation
 
@@ -21,10 +23,13 @@ Before you can run the app, you will need to install dependencies. The quickest 
 ```sh
 $ npm install 
 ```
+
 ## Running the project with nodemon
 
 To run this project. Run this command
- > nodemon
+ ```sh
+$ nodemon 
+```
 
 #
 ## License
