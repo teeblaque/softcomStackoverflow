@@ -28,11 +28,12 @@ describe("Authentication", function() {
         });
     });
 
-    it("login", function(done) {
+    it("/login", function(done) {
       const userCredentials = {
         email: "ajayitaiwo89@gmail.com",
         password: "12345678"
       };
+
       // var authenticatedUser = request.agent(app);
       server
         .post("/login")
