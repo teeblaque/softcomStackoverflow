@@ -37,6 +37,10 @@ app.use(cors());
 
 // app.use(logger("dev"));
 
+app.get("/", function(req, res) {
+  res.send("Softcom");
+});
+
 // Serve static resources
 app.use('/public', express.static('public'));
 
@@ -44,7 +48,7 @@ app.use('/api/v1', api)
 
 
 // Define PORT
-const port = process.env.PORT || 4004;
+const port = process.env.PORT || 4000;
 const server = app.listen(port, () => {
     console.log('Connected to port ' + port)
 })

@@ -10,12 +10,6 @@ const { check, validationResult } = require("express-validator");
 // Sign-up
 router.post('/signup', user_controller.register);
 
-const validationRules = [
-  check("email").isEmail(),
-  check("password").isLength({ min: 6 }),
-  check("name").isLength({min: 6})
-];
-
 //login
 router.post('/login', user_controller.authenticate);
 
