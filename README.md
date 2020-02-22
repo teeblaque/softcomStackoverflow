@@ -5,7 +5,7 @@
 
 ## Prerequisites
 
-To package and run this application with node, you'll need to:
+To package and run this application, you'll need to:
 
 1. Install Mongodb on your machine
 
