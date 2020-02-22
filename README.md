@@ -7,9 +7,13 @@
 
 To package and run this application, you'll need to:
 
-1. Install Mongodb on your machine
+1. Install and configure softcomStackoverflow
 
-2. Clone this repository:
+2. Install Mongodb on your machine
+
+3. Install Node
+
+4. Clone this repository:
 
 ```sh
  $ git clone https://github.com/teeblaque/softcomStackoverflow.git
@@ -30,6 +34,8 @@ To run this project. Run this command
  ```sh
 $ nodemon 
 ```
+
+Now head to http://localhost:4004 and see your running app!
 
 #
 ## License
