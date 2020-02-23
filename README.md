@@ -43,6 +43,13 @@ $ node server.js
 
 Now head to http://localhost:4004/api/v1/ and see your running app!
 
+## Unit Test
+
+To carry out a unit test, run this command
+ ```sh
+$ npm test 
+```
+
 #
 ## License
 

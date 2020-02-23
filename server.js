@@ -27,18 +27,14 @@ mongoose.set('useCreateIndex', true);
 
 // Express settings
 const app = express();
-app.use(
-  bodyParser.urlencoded({
-    extended: true
-  })
-);
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(cors());
 
 // app.use(logger("dev"));
 
-app.get("/", function(req, res) {
-  res.send("Softcom");
+app.get("/", (req, res) => {
+  res.send({ message: "Yabadabadooo" });
 });
 
 // Serve static resources
@@ -46,9 +42,8 @@ app.use('/public', express.static('public'));
 
 app.use('/api/v1', api)
 
-
 // Define PORT
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5004;
 const server = app.listen(port, () => {
     console.log('Connected to port ' + port)
 })
@@ -65,3 +60,5 @@ app.use(function (err, req, res, next) {
     if (!err.statusCode) err.statusCode = 500;
     res.status(err.statusCode).send(err.message);
 });
+
+module.exports = server;

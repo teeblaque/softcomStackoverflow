@@ -66,6 +66,7 @@ exports.authenticate = (req, res) => {
         }
       );
       res.status(200).json({
+        message: "User logged In",
         token: jwtToken,
         expiresIn: 3600,
         data: getUser
