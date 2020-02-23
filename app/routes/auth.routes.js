@@ -49,4 +49,6 @@ router.get("/search-answer/:questionId", question_controller.searchAnswers);
 //search a user
 router.get("/search-user/:id", user_controller.searchUser);
 
+//No route
+
 module.exports = router;

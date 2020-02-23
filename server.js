@@ -34,7 +34,7 @@ app.use(cors());
 // app.use(logger("dev"));
 
 app.get("/", (req, res) => {
-  res.send({ message: "Yabadabadooo" });
+  res.send({ message: "Welcome to softcomNg!" });
 });
 
 // Serve static resources
@@ -43,7 +43,7 @@ app.use('/public', express.static('public'));
 app.use('/api/v1', api)
 
 // Define PORT
-const port = process.env.PORT || 5004;
+const port = process.env.PORT || 5005;
 const server = app.listen(port, () => {
     console.log('Connected to port ' + port)
 })

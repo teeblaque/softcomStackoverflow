@@ -37,7 +37,7 @@ exports.question = (req, res) => {
             question
               .save()
               .then(result => {
-                res.json({ message: "Question created!", result });
+                return res.json({ message: "Question created!", result });
               })
               .catch(error => {
                 res.status(500).json({ error });
@@ -51,6 +51,7 @@ exports.viewQuestions = (req, res) => {
       return next(error);
     } else {
       res.status(200).json({
+        'message': 'success',
         data: response
       });
     }
@@ -67,6 +68,7 @@ exports.singleQuestion = (req, res) => {
         });
       }
       res.status(200).json({
+        message: 'success',
         data: note
       });
     //   res.send(note);

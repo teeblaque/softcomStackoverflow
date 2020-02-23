@@ -21,7 +21,7 @@ exports.register = (req, res, next) => {
           .save()
           .then(response => {
             res.status(201).json({
-              message: "Account was successfully created!",
+              message: "User created!!!",
               result: response
             });
           })
@@ -65,7 +65,7 @@ exports.authenticate = (req, res) => {
           expiresIn: "24h"
         }
       );
-      res.status(200).json({
+      return res.status(200).json({
         message: "User logged In",
         token: jwtToken,
         expiresIn: 3600,
@@ -85,6 +85,7 @@ exports.getUser = (req, res) => {
         return next(error);
       } else {
         res.status(200).json({
+          message: "success",
             data: response
         });
       }
@@ -110,7 +111,8 @@ exports.currentUser = (req, res) => {
            message: "Unauthorized User"
          });
        } else {
-         res.status(200).json({
+         return res.status(200).json({
+           message: 'Welcome',
            data: user
          });
        }
@@ -150,4 +152,5 @@ exports.searchUser = (req, res) => {
         message: "Error retrieving note with id " + req.params.id
       });
     });
+
 }
