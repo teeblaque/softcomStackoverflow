@@ -23,7 +23,7 @@ router.get('/current-user', authorize, user_controller.currentUser);
 router.post('/questions/ask', authorize, question_controller.question);
 
 //View All Questions
-router.get("/questions", authorize, question_controller.viewQuestions);
+router.get("/questions", question_controller.viewQuestions);
 
 //View Single Question
 router.get("/questions/:questionId/:slug", question_controller.singleQuestion);
